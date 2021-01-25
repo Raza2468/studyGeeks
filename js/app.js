@@ -139,6 +139,7 @@ if (localStor) {
     deleteBtn.style.backgroundColor = "white";
     itemBtn.style.backgroundColor = "white";
     // backBtn.style.display = "initial";
+    //
     firebase.database().ref(`classWork/${localStor}`).on("child_added", (data) => {
         var postTime = new Date(data.val().postTime);
 
